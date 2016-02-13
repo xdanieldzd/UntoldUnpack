@@ -11,3 +11,9 @@ Requirements
  * Visual Studio Community 2013 (or higher)
 * Usage
  * Compatible files to convert
+
+Usage
+=====
+Syntax: `UntoldUnpack.exe <path to HPI or HPB file> <output directory>`
+
+Example: `UntoldUnpack.exe "C:\Temp\EOU\MORI1R.HPI" "C:\Temp\EOU\Output"`
