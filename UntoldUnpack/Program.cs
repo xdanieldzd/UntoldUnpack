@@ -28,7 +28,7 @@ namespace UntoldUnpack
                 args = CommandLineTools.CreateArgs(Environment.CommandLine);
                 EO4String.TransformToAscii = true;
 
-                if (args.Length < 2 || args.Length > 3)
+                if (args.Length != 3)
                     throw new Exception("Invalid arguments; expected: <archive> <output dir>");
 
                 FileInfo inputFile = new FileInfo(args[1]);
