@@ -36,9 +36,9 @@ namespace UntoldUnpack.Graphics
             /* ETC1     */ new Codec(PicaDataTypes.UnsignedByte,        PicaPixelFormats.ETC1RGB8NativeDMP,         DecodeETC1),
             /* ETC1_A4  */ new Codec(PicaDataTypes.UnsignedByte,        PicaPixelFormats.ETC1AlphaRGB8A4NativeDMP,  DecodeETC1_A4),
             /* A8       */ new Codec(PicaDataTypes.UnsignedByte,        PicaPixelFormats.AlphaNativeDMP,            DecodeA8),
-            /* A4       */ new Codec(PicaDataTypes.Unsigned4BitsDMP,    PicaPixelFormats.AlphaNativeDMP,            null /*DecodeA4*/),
+            /* A4       */ new Codec(PicaDataTypes.Unsigned4BitsDMP,    PicaPixelFormats.AlphaNativeDMP,            DecodeA4),
             /* L8       */ new Codec(PicaDataTypes.UnsignedByte,        PicaPixelFormats.LuminanceNativeDMP,        DecodeL8),
-            /* L4       */ new Codec(PicaDataTypes.Unsigned4BitsDMP,    PicaPixelFormats.LuminanceNativeDMP,        null /*DecodeL4*/),
+            /* L4       */ new Codec(PicaDataTypes.Unsigned4BitsDMP,    PicaPixelFormats.LuminanceNativeDMP,        DecodeL4),
             /* LA88     */ new Codec(PicaDataTypes.UnsignedByte,        PicaPixelFormats.LuminanceAlphaNativeDMP,   DecodeLA88),
             /* LA44     */ new Codec(PicaDataTypes.UnsignedByte44DMP,   PicaPixelFormats.LuminanceAlphaNativeDMP,   DecodeLA44)
         };
@@ -211,7 +211,6 @@ namespace UntoldUnpack.Graphics
 
         private static void DecodeA4(BinaryReader reader, byte[] targetData, int x, int y, int width, int height)
         {
-            // TODO: fixme?
             for (int t = 0; t < tileOrder.Length; t += 2)
             {
                 byte a4 = reader.ReadByte();
@@ -241,7 +240,6 @@ namespace UntoldUnpack.Graphics
 
         private static void DecodeL4(BinaryReader reader, byte[] targetData, int x, int y, int width, int height)
         {
-            // TODO: fixme?
             for (int t = 0; t < tileOrder.Length; t += 2)
             {
                 byte l4 = reader.ReadByte();
