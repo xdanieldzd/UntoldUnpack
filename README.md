@@ -1,6 +1,6 @@
 UntoldUnpack
 ============
-__UntoldUnpack__ is an unpacker for HPI-HPB archives used in _Etrian Odyssey Untold: The Millennium Girl_, _Etrian Odyssey 2 Untold: The Fafnir Knight_ and _Etrian Odyssey V: Beyond the Legends (Demo)_ by Atlus for Nintendo 3DS. It is written in C# and based on the .NET Framework.
+__UntoldUnpack__ is an unpacker for HPI-HPB archives used in _Etrian Odyssey Untold: The Millennium Girl_, _Etrian Odyssey 2 Untold: The Fafnir Knight_ and _Etrian Odyssey V: Beyond the Legends_ by Atlus for Nintendo 3DS. It is written in C# and based on the .NET Framework.
 
 Requirements
 ============
